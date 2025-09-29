@@ -13,7 +13,7 @@ RUN nix build .
 RUN mkdir /tmp/nix-store-closure
 RUN cp -R $(nix-store -qR result/) /tmp/nix-store-closure
 
-FROM ubuntu:24.04
+FROM ubuntu:24.10
 
 WORKDIR /app
 
